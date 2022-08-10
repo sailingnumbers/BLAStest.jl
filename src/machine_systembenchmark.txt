@@ -1,0 +1,33 @@
+cat,testname,units,res
+info,SysBenchVer,,0.4.1
+info,JuliaVer,,1.7.3
+info,OS,,Linux (x86_64-pc-linux-gnu)
+info,CPU,,Intel(R) Xeon(R) Platinum 8272CL CPU @ 2.60GHz
+info,CPU_THREADS,,4
+info,WORD_SIZE,,64
+info,LIBM,,libopenlibm
+info,LLVM,,"libLLVM-12.0.1 (ORCJIT, skylake-avx512)"
+info,BLAS,,libopenblas64_
+info,BLAS_threads,,4
+info,GPU,,
+cpu,FloatMul,ms,1.5e-6
+cpu,FusedMulAdd,ms,1.5e-6
+cpu,FloatSin,ms,4.5e-6
+cpu,VecMulBroad,ms,5.105840886203424e-5
+cpu,CPUMatMul,ms,0.028
+cpu,MatMulBroad,ms,0.006216833333333333
+cpu,3DMulBroad,ms,0.002211111111111111
+cpu,peakflops,flops,1.3663668109228354e11
+cpu,FFMPEGH264Write,ms,368.582137
+mem,DeepCopy,ms,0.00034767932489451476
+mem,Bandwidth10kB,MiB/s,90612.69076850057
+mem,Bandwidth100kB,MiB/s,41868.62852515243
+mem,Bandwidth1MB,MiB/s,10081.017287409753
+mem,Bandwidth10MB,MiB/s,9977.655772656177
+mem,Bandwidth100MB,MiB/s,5063.011242960263
+diskio,DiskWrite1KB,ms,0.0376
+diskio,DiskWrite1MB,ms,1.374215
+diskio,DiskRead1KB,ms,0.0117
+diskio,DiskRead1MB,ms,0.298754
+loading,JuliaLoad,ms,201.993521
+compilation,compilecache,ms,339.362928

@@ -1,0 +1,310 @@
+┌ Info: # MACHINE SPECS ####################
+└ @ Main /workspaces/BLAStest.jl/src/machine.jl:3
+┌ Debug: Code type not recognized: Float64
+└ @ Term.Style /home/vscode/.julia/packages/Term/G3ujH/src/style.jl:73
+┌ Info: Julia Base Machine Info
+│   Base.Sys.cpu_summary() = nothing
+│   Sys.CPU_NAME = skylake-avx512
+│   Sys.MACHINE = x86_64-pc-linux-gnu
+│   Sys.ARCH = x86_64
+│   Sys.CPU_THREADS = 4
+│   Threads.nthreads() = 4
+│   Sys.total_memory() / 2 ^ 20 = 7957.69140625
+│   Sys.free_memory() / 2 ^ 20 = 1861.578125
+│   Sys.loadavg() = [0.67, 0.37, 0.26]
+│   Sys.SC_CLK_TCK = 100
+└ @ Main /workspaces/BLAStest.jl/src/machine.jl:5
+┌ Info: Hwloc Machine Info
+│   num_physical_cores() = 2
+│   num_virtual_cores() = 4
+│   num_numa_nodes() = 1
+│   num_packages() = 1
+│   ("Cache size in Bytes: ", Hwloc.cachesize()) = ("Cache size in Bytes: ", (L1 = 32768, L2 = 1048576, L3 = 37486592))
+│   Hwloc.cachelinesize() = (L1 = 64, L2 = 64, L3 = 64)
+└ @ Main /workspaces/BLAStest.jl/src/machine.jl:8
+┌ Info: Basic topology (only stdout):
+│   Hwloc.topology_info() = nothing
+└ @ Main /workspaces/BLAStest.jl/src/machine.jl:9
+┌ Info: Detailed topology (only stdout):
+│   Hwloc.topology() = nothing
+└ @ Main /workspaces/BLAStest.jl/src/machine.jl:10
+┌ Info: CpuId Machine Info
+│   cpuinfo() = | Cpu Property       | Value                                                   |
+|:------------------ |:------------------------------------------------------- |
+| Brand              | Intel(R) Xeon(R) Platinum 8272CL CPU @ 2.60GHz          |
+| Vendor             | :Intel                                                  |
+| Architecture       | :Skylake                                                |
+| Model              | Family: 0x06, Model: 0x55, Stepping: 0x07, Type: 0x00   |
+| Cores              | 2 physical cores, 4 logical cores (on executing CPU)    |
+|                    | Hyperthreading hardware capability detected             |
+| Clock Frequencies  | Not supported by CPU                                    |
+| Data Cache         | Level 1:3 : (32, 1024, 36608) kbytes                    |
+|                    | 64 byte cache line size                                 |
+| Address Size       | 48 bits virtual, 46 bits physical                       |
+| SIMD               | 512 bit = 64 byte max. SIMD vector size                 |
+| Time Stamp Counter | TSC is accessible via `rdtsc`                           |
+|                    | TSC increased at every clock cycle (non-invariant TSC)  |
+| Perf. Monitoring   | Performance Monitoring Counters (PMC) are not supported |
+| Hypervisor         | Yes, Microsoft                                          |
+
+└ @ Main /workspaces/BLAStest.jl/src/machine.jl:15
+┌ Info: CpuId Machine Info
+│   cpucores() = 2
+│   cputhreads() = 4
+│   CpuId.cpunodes() = 1
+│   CpuId.cpucores_total() = 4
+└ @ Main /workspaces/BLAStest.jl/src/machine.jl:16
+┌ Info: CpuId Feature Table
+└ @ Main /workspaces/BLAStest.jl/src/machine.jl:17
+┌ Info: | Cpu Feature | Description                                                  |
+│ |:----------- |:------------------------------------------------------------ |
+│ | ADX         | Intel ADX (Multi-Precision Add-Carry Instruction Extensions) |
+│ | AES         | AES encryption instruction set                               |
+│ | AHF64       | LAHF and SAHF in PM64                                        |
+│ | APIC        | APIC on-chip (Advanced Programmable Interrupt Controller)    |
+│ | AVX         | 256bit Advanced Vector Extensions, AVX                       |
+│ | AVX2        | SIMD 256bit Advanced Vector Extensions 2                     |
+│ | AVX512BW    | AVX-512 Byte and Word Instructions                           |
+│ | AVX512CD    | AVX-512 Conflict Detection Instructions                      |
+│ | AVX512DQ    | AVX-512 Doubleword and Quadword Instructions                 |
+│ | AVX512F     | AVX-512 Foundation                                           |
+│ | AVX512VL    | AVX-512 Vector Length Extensions                             |
+│ | BMI1        | Bit Manipulation Instruction Set 1                           |
+│ | BMI2        | Bit Manipulation Instruction Set 2                           |
+│ | CLFLUSH     | CLFLUSHOPT Instructions                                      |
+│ | CLFSH       | CLFLUSH instruction (SSE2)                                   |
+│ | CMOV        | Conditional move CMOV and FCMOV instructions                 |
+│ | CX16        | CMPXCHG16B instruction                                       |
+│ | CX8         | CMPXCHG8 instruction (64bit compare and exchange)            |
+│ | DE          | Debugging extensions                                         |
+│ | ERMS        | Enhanced REP MOVSB/STOSB                                     |
+│ | F16C        | half-precision float support                                 |
+│ | FMA3        | Fused multiply-add using three operands                      |
+│ | FPDPR       | FPU CS and FPU DS deprecated                                 |
+│ | FPU         | Onboard x87 FPU                                              |
+│ | FSGS        | Access to base of %fs and %gs                                |
+│ | FXSR        | FXSAVE, FXRSTOR instructions                                 |
+│ | HLE         | Transactional Synchronization Extensions                     |
+│ | HTT         | Max APIC IDs reserved field is valid                         |
+│ | HYPVS       | Running on hypervisor                                        |
+│ | INVPCID     | INVPCID instruction                                          |
+│ | LM          | AMD64 long mode                                              |
+│ | LZCNT       | LZCNT instruction                                            |
+│ | MCA         | Machine Check Architecture (MSR)                             |
+│ | MCE         | Machine check exception                                      |
+│ | MMX         | 64bit Multimedia Streaming Extensions                        |
+│ | MOVBE       | MOVBE instruction                                            |
+│ | MPX         | Intel MPX (Memory Protection Extensions)                     |
+│ | MSR         | Model Specific Registers, RDMSR and WRMSR instructions       |
+│ | MTRR        | Memory Type Range Registers                                  |
+│ | NX          | NXE                                                          |
+│ | OSXSV       | XSAVE enabled by OS                                          |
+│ | PAE         | Physical address extension                                   |
+│ | PAT         | Page attribute table                                         |
+│ | PCID        | Process context identifiers                                  |
+│ | PCLMUL      | PCLMULQDQ support                                            |
+│ | PG1G        | PG1G                                                         |
+│ | PGE         | Page global bit                                              |
+│ | POPCNT      | POPCNT instruction                                           |
+│ | PREFETCHW   | PREFETCHW instruction                                        |
+│ | PSE         | Page size extensions                                         |
+│ | PSE36       | 36bit page size extension                                    |
+│ | RDRND       | On-chip random number generator                              |
+│ | RDSEED      | RDSEED instruction                                           |
+│ | RDTSCP      | RDTSCP instruction                                           |
+│ | RTM         | Transactional Synchronization Extensions                     |
+│ | SEP         | SYSENTER and SYSEXIT instructions                            |
+│ | SMAP        | Supervisor Mode Access Prevention                            |
+│ | SMEP        | Supervisor-Mode Execution Prevention                         |
+│ | SS          | Self Snoop                                                   |
+│ | SSE         | 128bit Streaming SIMD Extensions 1                           |
+│ | SSE2        | 128bit Streaming SIMD Extensions 2                           |
+│ | SSE3        | 128bit Streaming SIMD Extensions 3                           |
+│ | SSE41       | 128bit Streaming SIMD Extensions 4.1                         |
+│ | SSE42       | 128bit Streaming SIMD Extensions 4.2                         |
+│ | SSSE3       | 128bit Supplemental Streaming SIMD Extension 3               |
+│ | SYSCALL     | SYSCALL and SYSRET                                           |
+│ | TSC         | Time stamp counter                                           |
+│ | VME         | Virtual 8086 mode enhancements                               |
+│ | VMX         | Virtual machine extensions                                   |
+│ | XSAVE       | XSAVE, XRESTOR, XSETBV, XGETBV                               |
+└ @ Main /workspaces/BLAStest.jl/src/machine.jl:18
+┌ Info: SystemBenchmark / Results will be saved to log and machine_systembenchmark.txt file
+└ @ Main /workspaces/BLAStest.jl/src/machine.jl:23
+┌ Debug: Using LLVM 12.0.1 at /usr/local/julia/bin/../lib/julia/libLLVM-12jl.so
+└ @ LLVM /home/vscode/.julia/packages/LLVM/WjSQG/src/LLVM.jl:86
+┌ Debug: Requires conditionally ran code in 0.003533634 seconds: `RandomNumbers` detected `Random123`
+└ @ Requires /home/vscode/.julia/packages/RandomNumbers/3pD1N/src/RandomNumbers.jl:38
+┌ Debug: Requires conditionally ran code in 0.003961238 seconds: `FileIO` detected `HTTP`
+└ @ Requires /home/vscode/.julia/packages/FileIO/DtNtF/src/FileIO.jl:68
+┌ Debug: Requires conditionally ran code in 0.060434384 seconds: `CUDA` detected `SpecialFunctions`
+└ @ Requires /home/vscode/.julia/packages/CUDA/DfvRa/src/initialization.jl:35
+┌ Info: CUDA.functional() == false. No usable GPU detected
+└ @ SystemBenchmark /home/vscode/.julia/packages/SystemBenchmark/pi6MK/src/SystemBenchmark.jl:128
+┌ Debug: 0.01 MB test: 90612.69076850057 MiB/s
+└ @ SystemBenchmark /home/vscode/.julia/packages/SystemBenchmark/pi6MK/src/SystemBenchmark.jl:234
+┌ Debug: 0.1 MB test: 41868.62852515243 MiB/s
+└ @ SystemBenchmark /home/vscode/.julia/packages/SystemBenchmark/pi6MK/src/SystemBenchmark.jl:234
+┌ Debug: 1.0 MB test: 10081.017287409753 MiB/s
+└ @ SystemBenchmark /home/vscode/.julia/packages/SystemBenchmark/pi6MK/src/SystemBenchmark.jl:234
+┌ Debug: 10.0 MB test: 9977.655772656177 MiB/s
+└ @ SystemBenchmark /home/vscode/.julia/packages/SystemBenchmark/pi6MK/src/SystemBenchmark.jl:234
+┌ Debug: 100.0 MB test: 5063.011242960263 MiB/s
+└ @ SystemBenchmark /home/vscode/.julia/packages/SystemBenchmark/pi6MK/src/SystemBenchmark.jl:234
+┌ Debug: Mean bandwidth: 31520.6 MiB/s
+└ @ SystemBenchmark /home/vscode/.julia/packages/SystemBenchmark/pi6MK/src/SystemBenchmark.jl:236
+┌ Debug: Max bandwidth: 90612.69 MiB/s
+└ @ SystemBenchmark /home/vscode/.julia/packages/SystemBenchmark/pi6MK/src/SystemBenchmark.jl:237
+┌ Info: Printing of results may be truncated. To view the full results use `show(res, allrows=true, allcols=true)`
+└ @ SystemBenchmark /home/vscode/.julia/packages/SystemBenchmark/pi6MK/src/SystemBenchmark.jl:194
+┌ Info: (res = 32×4 DataFrame
+│  Row │ cat          testname         units   res
+│      │ String       String           String  Any
+│ ─────┼─────────────────────────────────────────────────────────────────────────
+│    1 │ info         SysBenchVer              0.4.1
+│    2 │ info         JuliaVer                 1.7.3
+│    3 │ info         OS                       Linux (x86_64-pc-linux-gnu)
+│    4 │ info         CPU                      Intel(R) Xeon(R) Platinum 8272CL…
+│    5 │ info         CPU_THREADS              4
+│    6 │ info         WORD_SIZE                64
+│    7 │ info         LIBM                     libopenlibm
+│    8 │ info         LLVM                     libLLVM-12.0.1 (ORCJIT, skylake-…
+│    9 │ info         BLAS                     libopenblas64_
+│   10 │ info         BLAS_threads             4
+│   11 │ info         GPU                      missing
+│   12 │ cpu          FloatMul         ms      1.5e-6
+│   13 │ cpu          FusedMulAdd      ms      1.5e-6
+│   14 │ cpu          FloatSin         ms      4.5e-6
+│   15 │ cpu          VecMulBroad      ms      5.10584e-5
+│   16 │ cpu          CPUMatMul        ms      0.028
+│   17 │ cpu          MatMulBroad      ms      0.00621683
+│   18 │ cpu          3DMulBroad       ms      0.00221111
+│   19 │ cpu          peakflops        flops   1.36637e11
+│   20 │ cpu          FFMPEGH264Write  ms      368.582
+│   21 │ mem          DeepCopy         ms      0.000347679
+│   22 │ mem          Bandwidth10kB    MiB/s   90612.7
+│   23 │ mem          Bandwidth100kB   MiB/s   41868.6
+│   24 │ mem          Bandwidth1MB     MiB/s   10081.0
+│   25 │ mem          Bandwidth10MB    MiB/s   9977.66
+│   26 │ mem          Bandwidth100MB   MiB/s   5063.01
+│   27 │ diskio       DiskWrite1KB     ms      0.0376
+│   28 │ diskio       DiskWrite1MB     ms      1.37421
+│   29 │ diskio       DiskRead1KB      ms      0.0117
+│   30 │ diskio       DiskRead1MB      ms      0.298754
+│   31 │ loading      JuliaLoad        ms      201.994
+│   32 │ compilation  compilecache     ms      339.363, allrows = true, allcols = true)
+└ @ Main /workspaces/BLAStest.jl/src/machine.jl:27
+┌ Info: # SOFTWARE VERSIONS #################
+└ @ Main /workspaces/BLAStest.jl/src/versions.jl:3
+┌ Info: Julia version
+└ @ Main /workspaces/BLAStest.jl/src/versions.jl:6
+┌ Info: Julia Version 1.7.3
+│ Commit 742b9abb4d (2022-05-06 12:58 UTC)
+│ Platform Info:
+│   OS: Linux (x86_64-pc-linux-gnu)
+│       Debian GNU/Linux 11 (bullseye)
+│   uname: Linux 5.4.0-1086-azure #91~18.04.1-Ubuntu SMP Thu Jun 23 20:33:05 UTC 2022 x86_64 unknown
+│   CPU: Intel(R) Xeon(R) Platinum 8272CL CPU @ 2.60GHz: 
+│               speed         user         nice          sys         idle          irq
+│        #1  2593 MHz       4513 s         76 s       1676 s      75187 s          0 s
+│        #2  2593 MHz       5126 s         72 s       1644 s      74833 s          0 s
+│        #3  2593 MHz       3537 s         93 s       1768 s      76455 s          0 s
+│        #4  2593 MHz       4497 s         84 s       1666 s      75576 s          0 s
+│        
+│   Memory: 7.771183013916016 GB (202.12109375 MB free)
+│   Uptime: 8282.16 sec
+│   Load Avg:  1.59  1.03  0.55
+│   WORD_SIZE: 64
+│   LIBM: libopenlibm
+│   LLVM: libLLVM-12.0.1 (ORCJIT, skylake-avx512)
+│ Environment:
+│   JULIA_GPG = 3673DF529D9049477F76B37566E3C7DC03D6E495
+│   JULIA_PATH = /usr/local/julia
+│   JULIA_VERSION = 1.7.3
+│   JULIA_EDITOR = code
+│   JULIA_NUM_THREADS = 4
+│   JULIA_PATH = /usr/local/julia
+│   HOME = /home/vscode
+│   PATH = /vscode/bin/linux-x64/4af164ea3a06f701fe3e89a2bcbb421d2026b68f/bin/remote-cli:/usr/local/julia/bin:/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/vscode/.local/bin
+│   TERM = xterm-256color
+│   FONTCONFIG_PATH = /home/vscode/.julia/artifacts/387d89822da323c098aba6f8ab316874d4e90f2e/etc/fonts
+└ @ Main /workspaces/BLAStest.jl/src/versions.jl:8
+┌ Info: Package version
+└ @ Main /workspaces/BLAStest.jl/src/versions.jl:11
+┌ Info:      Project BLAStests v0.1.0
+│       Status `/workspaces/BLAStest.jl/Project.toml`
+│   [6e4b80f9] BenchmarkTools v1.3.1
+│   [336ed68f] CSV v0.8.5
+│   [159f3aea] Cairo v1.0.5
+│   [adafc99b] CpuId v0.3.1
+│   [a8cc5b0e] Crayons v4.1.1
+│   [a93c6f00] DataFrames v1.3.4
+│   [186bb1d3] Fontconfig v0.4.0
+│   [c91e804a] Gadfly v1.3.4
+│   [0e44f5e4] Hwloc v2.0.0
+│   [e6f89c97] LoggingExtras v0.4.9
+│   [33e6dc65] MKL v0.5.0
+│   [3beb2ed1] PDFmerger v0.2.0
+│   [05e9033e] STREAMBenchmark v0.4.3
+│   [2913bbd2] StatsBase v0.33.21
+│   [30cdaa97] SystemBenchmark v0.4.1
+│   [22787eb5] Term v1.0.2
+│   [811555cd] ThreadPinning v0.4.5
+│   [b8865327] UnicodePlots v3.0.4
+│   [8bb1440f] DelimitedFiles
+└ @ Main /workspaces/BLAStest.jl/src/versions.jl:13
+┌ Info: # THREAD PINNING ##############
+└ @ Main /workspaces/BLAStest.jl/src/thread_pinning.jl:3
+┌ Info: THREAD PINNING - default thread pinning
+└ @ Main /workspaces/BLAStest.jl/src/thread_pinning.jl:11
+┌ Info: THREAD PINNING - threadinfo
+└ @ Main /workspaces/BLAStest.jl/src/thread_pinning.jl:25
+┌ Info: For jlthreads != 1 we strongly recommend to set BLAS.set_num_threads(1).
+└ @ ThreadPinning /home/vscode/.julia/packages/ThreadPinning/GyHFI/src/threadinfo.jl:211
+┌ Warning: Overlap: Some Julia threads are running on the same cpu threads
+└ @ ThreadPinning /home/vscode/.julia/packages/ThreadPinning/GyHFI/src/threadinfo.jl:245
+┌ Info: nothing
+└ @ Main /workspaces/BLAStest.jl/src/thread_pinning.jl:27
+┌ Info: THREAD PINNING - Core 2 core latencies: results
+└ @ Main /workspaces/BLAStest.jl/src/thread_pinning.jl:35
+┌ Info: latencies
+│   display(latencies) = nothing
+└ @ Main /workspaces/BLAStest.jl/src/thread_pinning.jl:38
+┌ Info: THREAD PINNING - Core to core latencies: plot
+└ @ Main /workspaces/BLAStest.jl/src/thread_pinning.jl:40
+┌ Debug: Requires conditionally ran code in 0.00983421 seconds: `Ratios` detected `FixedPointNumbers`
+└ @ Requires /home/vscode/.julia/packages/Ratios/jmhFy/src/Ratios.jl:125
+┌ Debug: Requires conditionally ran code in 0.009692808 seconds: `Interpolations` detected `Unitful`
+└ @ Requires /home/vscode/.julia/packages/Interpolations/UAW5r/src/Interpolations.jl:453
+┌ Debug: Requires conditionally ran code in 1.323920974 seconds: `CategoricalArrays` detected `JSON`
+└ @ Requires /home/vscode/.julia/packages/CategoricalArrays/zg8z5/src/CategoricalArrays.jl:39
+┌ Debug: Requires conditionally ran code in 0.007972389 seconds: `CategoricalArrays` detected `SentinelArrays`
+└ @ Requires /home/vscode/.julia/packages/CategoricalArrays/zg8z5/src/CategoricalArrays.jl:53
+┌ Debug: Loading DataFrames support into Gadfly
+└ @ Gadfly /home/vscode/.julia/packages/Gadfly/B5yQc/src/dataframes.jl:1
+┌ Debug: Requires conditionally ran code in 0.030831244 seconds: `Gadfly` detected `DataFrames`
+└ @ Requires /home/vscode/.julia/packages/Gadfly/B5yQc/src/Gadfly.jl:62
+┌ Debug: Loading Cairo backend into Compose.jl
+└ @ Compose /home/vscode/.julia/packages/Compose/zYFeH/src/Compose.jl:169
+┌ Debug: Requires conditionally ran code in 0.384633485 seconds: `Compose` detected `Cairo`
+└ @ Requires /home/vscode/.julia/packages/Compose/zYFeH/src/Compose.jl:175
+┌ Debug: Loading Fontconfig backend into Compose.jl
+└ @ Compose /home/vscode/.julia/packages/Compose/zYFeH/src/Compose.jl:157
+┌ Debug: Requires conditionally ran code in 0.600648391 seconds: `Compose` detected `Fontconfig`
+└ @ Requires /home/vscode/.julia/packages/Compose/zYFeH/src/Compose.jl:176
+┌ Info: # STREAMBenchmarks ###########
+└ @ Main /workspaces/BLAStest.jl/src/STREAMBenchmarks.jl:1
+┌ Debug: The JULIA_EXCLUSIVE environment variable is not set to 1. Therefore, the kernel is allowed to move threads to different cores. We recommend that you set the JULIA_EXCLUSIVE environment variable to 1. To suppress this warning, set the SUPPRESS_THREADINGUTILITIES_WARNING environment variable to 1.
+└ @ ThreadingUtilities /home/vscode/.julia/packages/ThreadingUtilities/k3fsO/src/warnings.jl:46
+┌ Info: STREAMBenchmark - single and multithreaded memory bandwidth
+└ @ Main /workspaces/BLAStest.jl/src/STREAMBenchmarks.jl:5
+┌ Info: STREAMBenchmark - single-threaded memory bandwidth MB/s - copy, scale, add, triad
+│   sbench.single = (median = 14515.0, minimum = 14490.6, maximum = 14727.3)
+└ @ Main /workspaces/BLAStest.jl/src/STREAMBenchmarks.jl:8
+┌ Info: STREAMBenchmark - multi-threaded memory bandwidth MB/s - copy, scale, add, triad
+│   sbench.multi = (median = 31218.7, minimum = 29514.8, maximum = 32275.3)
+└ @ Main /workspaces/BLAStest.jl/src/STREAMBenchmarks.jl:9
+┌ Info: STREAMBenchmark - memory bandwidth scalling with number of threads
+└ @ Main /workspaces/BLAStest.jl/src/STREAMBenchmarks.jl:13
+┌ Info: ("STREAMBenchmark - memory bandwith in MB/S for increasing number of threads: ", [14379.5, 27525.2, 24763.5, 31809.9])
+└ @ Main /workspaces/BLAStest.jl/src/STREAMBenchmarks.jl:15
