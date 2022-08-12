@@ -1,12 +1,15 @@
 @info "# BANDWIDTHBENCHMARKS ################"
 
-using BandwidthBenchmark
+using BandwidthBenchmark # [as of 08 2022 not registered: add https://github.com/carstenbauer/BandwidthBenchmark.jl]
 using DataFrames
 using UnicodePlots
 
-println("
-# BANDWIDTHBENCHMARK - memory bandwidth using streaming kernels")
+@info "BANDWIDTHBENCHMARK - memory bandwidth using streaming kernels"
+bwbench(; verbose=true);
+BandwidthBenchmark.bwbench(#= ; verbose=true =#)
+
 print(BandwidthBenchmark.bwbench(#= ; verbose=true =#))
+@info BandwidthBenchmark.bwbench(#= ; verbose=true =#)
 @info "clear GC", GC.gc();
 
 @info "Some variables"  BandwidthBenchmark.bwbench(; verbose=true)

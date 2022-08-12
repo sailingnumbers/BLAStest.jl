@@ -63,6 +63,14 @@ git-tree-sha1 = "a598ecb0d717092b5539dbbe890c98bac842b072"
 uuid = "ab4f0b2a-ad5b-11e8-123f-65d77653426b"
 version = "0.2.0"
 
+[[deps.BandwidthBenchmark]]
+deps = ["DataFrames", "PrettyTables", "Printf", "Requires", "Statistics"]
+git-tree-sha1 = "e471c411f52d5d6d29252fd101ada191bc535352"
+repo-rev = "main"
+repo-url = "https://github.com/carstenbauer/BandwidthBenchmark.jl"
+uuid = "68eb07c1-04fd-4e62-9736-d6127c4c03c6"
+version = "0.1.0"
+
 [[deps.Base64]]
 uuid = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
 
